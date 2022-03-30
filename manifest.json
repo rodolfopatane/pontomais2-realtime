@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Pontomais em tempo real",
+    "description": "Jornada de trabalho em tempo real (app2.pontomais.com.br)",
+    "version": "0.0.1",
+    "icons": {
+        "128": "clock.png"
+    },
+    "permissions": [
+        "webNavigation",
+        "scripting"
+    ],
+    "host_permissions": ["https://app2.pontomais.com.br/"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
