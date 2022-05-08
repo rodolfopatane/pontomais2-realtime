@@ -5,6 +5,6 @@ chrome.webNavigation.onDOMContentLoaded.addListener((details) => {
     });
 }, {
     url: [{
-        urlEquals: "https://app2.pontomais.com.br/meu-perfil"
+        hostEquals: "app2.pontomais.com.br"
     }]
 });

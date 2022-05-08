@@ -49,7 +49,7 @@ const updateData = () => {
                 const _pontos = Array.prototype.map.call(pontosElements, pontoElement => pontoElement.innerText.split('-')[0].trim()).reverse()
                 if (_pontos.length < 1) throw Error('Sem dados para calcular')
                 const { horas, minutos, segundos } = calculaTempo(_pontos)
-                document.getElementById('total_trabalhado').innerHTML = `<h2>Tempo Total: ${horas}h ${minutos}m ${segundos}s </h2>`
+                document.getElementById('total_trabalhado').innerHTML = `<h2 style="color: #EA6700 !important">Tempo Total: ${horas}h ${minutos}m ${segundos}s </h2>`
             } catch (error) {
                 if (document.getElementById('total_trabalhado')) document.getElementById('total_trabalhado').remove()
                 clearInterval(timer);
